@@ -1,0 +1,27 @@
+{
+  "api": 2,
+  "id": "firefox",
+  "name": "Firefox ESR",
+  "version": "0.1.0",
+  "publisher": "V2Mac",
+  "description": "Mozilla's browser, from Debian. Every site sees only this mini VM's exit: its time zone, its city for location, no local addresses over WebRTC.",
+  "icon": "icon.svg",
+  "display": "gui",
+  "launch": {
+    "cmd": [
+      "/usr/local/bin/start.sh"
+    ]
+  },
+  "permissions": [
+    "clipboard",
+    "shared",
+    "sound",
+    "microphone"
+  ],
+  "changelog": "First release: Debian's Firefox ESR, updated by Debian, with telemetry off, fingerprinting protection on, WebRTC limited to the exit's address and location set to the exit's city.",
+  "securityNotes": "Clipboard for copy and paste, Shared for downloads and uploads, Sound and Microphone for video, music and calls; V2Mac asks before each is first used while it is open. Location is answered from the exit's coordinates (exit.json); WebRTC never offers local addresses.",
+  "packages": [
+    "firefox-esr",
+    "fonts-noto-color-emoji"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "policies": {
+    "DisableTelemetry": true,
+    "DisableFirefoxStudies": true,
+    "DisableDefaultBrowserAgent": true,
+    "DontCheckDefaultBrowser": true,
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+    "Preferences": {
+      "media.peerconnection.ice.no_host": { "Value": true, "Status": "locked" },
+      "media.peerconnection.ice.default_address_only": { "Value": true, "Status": "locked" },
+      "privacy.fingerprintingProtection": { "Value": true, "Status": "default" },
+      "privacy.fingerprintingProtection.overrides": { "Value": "-JSDateTimeUTC", "Status": "default" },
+      "geo.provider.use_geoclue": { "Value": false, "Status": "locked" },
+      "geo.provider.use_gpsd": { "Value": false, "Status": "locked" },
+      "datareporting.policy.dataSubmissionEnabled": { "Value": false, "Status": "locked" },
+      "browser.shell.checkDefaultBrowser": { "Value": false, "Status": "locked" }
+    }
+  }
+}
